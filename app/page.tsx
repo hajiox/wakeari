@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star } from "lucide-react"
 import Script from "next/script"
+import { track } from "@/lib/metaPixel"
 
 export default function ChashuLandingPage() {
   const scrollToSection = (sectionId: string) => {
@@ -492,6 +493,13 @@ export default function ChashuLandingPage() {
                 className="object-contain"
               />
             </div>
+            {/* Price Display */}
+            <div className="text-center mt-8">
+              <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+                4,290<span className="text-3xl md:text-4xl">円</span>
+              </p>
+              <p className="text-lg md:text-xl text-gray-600">（税・送料込）</p>
+            </div>
           </div>
         </section>
 
@@ -511,6 +519,12 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
+                    onClick={() =>
+                      track("InitiateCheckout", {
+                        content_name: "訳ありチャーシュー1kg",
+                        content_category: "Yahoo",
+                      })
+                    }
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -537,6 +551,12 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
+                    onClick={() =>
+                      track("InitiateCheckout", {
+                        content_name: "訳ありチャーシュー1kg",
+                        content_category: "Rakuten",
+                      })
+                    }
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -563,6 +583,12 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
+                    onClick={() =>
+                      track("InitiateCheckout", {
+                        content_name: "訳ありチャーシュー1kg",
+                        content_category: "Amazon",
+                      })
+                    }
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
