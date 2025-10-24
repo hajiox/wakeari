@@ -161,10 +161,19 @@ export default function ChashuLandingPage() {
 
         {/* Hero Section */}
         <section className="relative w-full">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <div className="relative w-full aspect-square">
+          <div className="container mx-auto px-4">
+            <div className="relative w-full aspect-square max-w-6xl mx-auto block md:hidden">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-vzS0fAGsTRrUiz2354RiPpvBr96Vti.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%EF%BC%88%E6%96%87%E5%AD%97%E3%81%AA%E3%81%97%EF%BC%89_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-TFA0OLz6aZFzbJNi850HUJ2iRGTqeq.jpg"
+                alt="ラーメン屋が作る本物のチャーシュー"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <div className="relative w-full aspect-square max-w-5xl mx-auto hidden md:block">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-HfGGT3ZbuCXPzGrxl7m3RPEy3BxPSW.jpg"
                 alt="ラーメン屋が作る本物のチャーシュー"
                 fill
                 className="object-contain"
@@ -540,6 +549,9 @@ export default function ChashuLandingPage() {
                   <p className="text-xs md:text-sm text-gray-600 mb-4">
                     PayPayポイントが貯まる使えるショッピングモールはこちら
                   </p>
+                  <p className="text-xs md:text-sm font-bold text-red-600">
+                    初めて当店をご利用のお客様に300円クーポン進呈中！
+                  </p>
                 </div>
               </div>
 
@@ -571,6 +583,9 @@ export default function ChashuLandingPage() {
                   <h4 className="font-bold mb-2 text-gray-900 text-sm md:text-base">楽天市場</h4>
                   <p className="text-xs md:text-sm text-gray-600 mb-4">
                     楽天ポイントが使える国内最大級のショッピングモールはこちら
+                  </p>
+                  <p className="text-xs md:text-sm font-bold text-red-600">
+                    初めて当店をご利用のお客様に300円クーポン進呈中！
                   </p>
                 </div>
               </div>
