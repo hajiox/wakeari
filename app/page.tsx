@@ -159,19 +159,23 @@ export default function ChashuLandingPage() {
           </div>
         </header>
 
-        {/* Hero Section */}
-        <section className="relative w-full">
+        {/* Hero Section - Mobile */}
+        <section className="relative w-full block md:hidden">
+          <div className="relative w-full aspect-[4/5]">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-TFA0OLz6aZFzbJNi850HUJ2iRGTqeq.jpg"
+              alt="ラーメン屋が作る本物のチャーシュー"
+              fill
+              className="object-cover scale-110"
+              priority
+            />
+          </div>
+        </section>
+
+        {/* Hero Section - Desktop */}
+        <section className="relative w-full hidden md:block">
           <div className="container mx-auto px-4">
-            <div className="relative w-full aspect-square max-w-6xl mx-auto block md:hidden">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%EF%BC%88%E6%96%87%E5%AD%97%E3%81%AA%E3%81%97%EF%BC%89_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-TFA0OLz6aZFzbJNi850HUJ2iRGTqeq.jpg"
-                alt="ラーメン屋が作る本物のチャーシュー"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-            <div className="relative w-full aspect-square max-w-5xl mx-auto hidden md:block">
+            <div className="relative w-full aspect-square max-w-5xl mx-auto">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-HfGGT3ZbuCXPzGrxl7m3RPEy3BxPSW.jpg"
                 alt="ラーメン屋が作る本物のチャーシュー"
@@ -384,7 +388,7 @@ export default function ChashuLandingPage() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">チャーハン</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">チャーハン</h3>
               </div>
 
               <div className="text-center">
