@@ -311,7 +311,7 @@ export default function ChashuLandingPage() {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4 order-2 md:order-1">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                   旨み・食感・バランス、そのすべてに理由があります。
                 </h2>
                 <div className="text-gray-700 leading-relaxed space-y-3">
@@ -351,7 +351,7 @@ export default function ChashuLandingPage() {
                 />
               </div>
               <div className="space-y-4">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                   小分け真空パック＋特製タレで、いつでも作りたての美味しさ
                 </h2>
                 <div className="text-gray-700 leading-relaxed space-y-3">
