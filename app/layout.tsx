@@ -9,9 +9,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "【訳あり1kg】ラーメン屋が作る本物のチャーシュー｜送料無料・即日発送｜会津ブランド館",
+  title: "【訳あり800g】ラーメン屋が作る本物のチャーシュー｜送料無料・即日発送｜会津ブランド館",
   description:
-    "楽天・Yahoo焼豚部門1位獲得！ラーメン屋が作る本物のチャーシュー訳あり1kg（200g×5個）。個包装＋特製タレ付きで送料無料・即日発送。累計10万食突破の人気商品を会津ブランド館からお届けします。",
+    "楽天・Yahoo焼豚部門1位獲得！ラーメン屋が作る本物のチャーシュー訳あり800g（200g×4個）。個包装＋特製タレ付きで送料無料・即日発送。累計10万食突破の人気商品を会津ブランド館からお届けします。",
   keywords: [
     "チャーシュー",
     "訳あり",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "【訳あり1kg】ラーメン屋が作る本物のチャーシュー｜送料無料",
+    title: "【訳あり800g】ラーメン屋が作る本物のチャーシュー｜送料無料",
     description: "楽天・Yahoo焼豚部門1位！累計10万食突破。個包装＋特製タレ付き。即日発送でお届けします。",
     url: "https://wakeari.aizu-syokubura.com",
     siteName: "会津ブランド館 チャーシュー専門店",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "【訳あり1kg】ラーメン屋が作る本物のチャーシュー｜送料無料",
+    title: "【訳あり800g】ラーメン屋が作る本物のチャーシュー｜送料無料",
     description: "楽天・Yahoo焼豚部門1位！累計10万食突破。個包装＋特製タレ付き。即日発送でお届けします。",
     images: ["/images/ogp.jpg"],
     creator: "@aizubrandhall",
