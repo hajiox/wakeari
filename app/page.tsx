@@ -205,7 +205,7 @@ export default function ChashuLandingPage() {
         </section>
 
         {/* Main Copy Section */}
-        <section className="py-12 md:py-16 bg-gray-50">
+        <section className="py-8 md:py-10 bg-gray-50">
           <div className="container mx-auto px-4 text-center max-w-5xl">
             <div className="space-y-4 mb-6">
               <Badge className="bg-red-600 text-white hover:bg-red-700 text-base px-4 py-2">累計10万食突破</Badge>
