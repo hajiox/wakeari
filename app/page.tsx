@@ -127,7 +127,7 @@ export default function ChashuLandingPage() {
             {showFloatingButton && (
               <button
                 onClick={() => scrollToSection("purchase-buttons")}
-                className="md:hidden bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm"
+                className="block md:hidden bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm"
               >
                 購入先を選ぶ
               </button>
