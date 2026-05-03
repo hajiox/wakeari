@@ -162,20 +162,61 @@ export default function ChashuLandingPage() {
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
-            こだわりセクション
+            手仕事 × 技術が生む、唯一無二のチャーシュー
           </h2>
 
-          <div className="relative aspect-video md:aspect-auto md:h-96 overflow-hidden rounded-lg shadow-lg mb-8">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-uRwYgrR20EZosR8r2NzOXD6hBRe1py.jpg"
-              alt="こだわりセクション"
-              fill
-              className="object-cover"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {/* Left - Pork Belly Image */}
+            <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0421%EF%BC%88%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%EF%BC%89%20%282%29-oALW1YeOnOLqtCnwJhkWgO2zJOzmBp.jpg"
+                alt="カナダ産チルド豚バラ肉"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Right - Text Content */}
+            <div className="flex flex-col justify-center">
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+                豚本来の旨みを最も引き出すカナダ産チルド豚バラ肉を使用。
+              </p>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+                長年チャーシューを作り続けてきた私たちでも、今回の肉質の違いには正直驚きました。しっとりとして柔らかく、豚肉特有の臭みが少ない。脂の甘みと赤身の旨みが自然に広がり、豚肉本来のおいしさをしっかり楽しめる肉質です。
+              </p>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                その肉質を活かすため、温度管理を徹底しながら一本ずつ丁寧に仕込みます。
+              </p>
+            </div>
           </div>
 
-          <p className="text-center text-gray-700 text-lg leading-relaxed">
-            ラーメン屋が作る本物のチャーシュー。旨み、食感、バランスにこだわり抜きました。
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {/* Left - Text Content */}
+            <div className="flex flex-col justify-center order-2 md:order-1">
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+                職人が一本ずつ丁寧にタコ糸を巻き、手仕事ならではの「バラ巻き」製法で形を整え、じっくりと低温で煮込みます。このとき使用するのは、炭酸を加えた独自の下処理。臭みを抑え、筋繊維をやわらかくほどきながら、しっとりとした食感へと導きます。
+              </p>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+                さらに当店では、「育てる漬けダレ」にも深いこだわりがあります。仕込みを重ねるたびに継ぎ足され、肉汁と旨みが凝縮された秘伝のタレは、時間とともにゼラチン状の旨みの塊に。
+              </p>
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                これを熱々のまま一晩かけて寝かせることで、旨みが芯まで染み込み、他では味わえない濃厚なチャーシューが完成します。
+              </p>
+            </div>
+
+            {/* Right - Tare Image */}
+            <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg order-1 md:order-2">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-uRwYgrR20EZosR8r2NzOXD6hBRe1py.jpg"
+                alt="こだわりの製法"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          <p className="text-center text-gray-900 text-lg md:text-xl font-semibold leading-relaxed">
+            すべての工程に、"本物の味を届けたい"という職人の想いが息づいています。
           </p>
         </div>
       </section>
