@@ -5,9 +5,26 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star } from "lucide-react"
 import Script from "next/script"
-import { track } from "@/lib/metaPixel"
+import { track, trackMallClick, trackViewContent } from "@/lib/metaPixel"
+import { useEffect } from "react"
 
 export default function ChashuLandingPage() {
+  // Track ViewContent on page load
+  useEffect(() => {
+    trackViewContent()
+  }, [])
+
+  const handleMallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    trackMallClick()
+    
+    // Wait 300-500ms before navigating
+    const href = (e.currentTarget as HTMLAnchorElement).href
+    setTimeout(() => {
+      window.location.href = href
+    }, 350)
+  }
+
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
   }
@@ -532,12 +549,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={() =>
-                      track("InitiateCheckout", {
-                        content_name: "訳ありチャーシュー800g",
-                        content_category: "Yahoo",
-                      })
-                    }
+                    onClick={handleMallClick}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -567,12 +579,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={() =>
-                      track("InitiateCheckout", {
-                        content_name: "訳ありチャーシュー800g",
-                        content_category: "Rakuten",
-                      })
-                    }
+                    onClick={handleMallClick}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -602,12 +609,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={() =>
-                      track("InitiateCheckout", {
-                        content_name: "訳ありチャーシュー800g",
-                        content_category: "Amazon",
-                      })
-                    }
+                    onClick={handleMallClick}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
