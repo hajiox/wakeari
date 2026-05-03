@@ -110,7 +110,7 @@ export default function ChashuLandingPage() {
     {
       question: "使用している豚肉の産地と品質は？",
       answer:
-        "当店のチャーシューは、世界的に評価の高いスペイン産豚バラ肉を使用しています。EU基準の厳格な品質管理のもと育てられ、安全性と信頼性が確立されています。赤身と脂身のバランスが秀逸で、脂肪にはオレイン酸が豊富。ジューシーで旨みのある食感が特長です。日本市場でも高評価で、2025年の最新データでは輸入量が前年比8.69％増。ラーメン用チャーシューとしての需要が高まり、日本の食文化とも好相性です。",
+        "当店のチャーシューは、カナダ産チルド豚バラ肉を使用しています。チルド肉ならではのしっとりとした肉質で、加熱後も柔らかく仕上がりやすいのが特徴です。豚肉特有の臭みが少なく、脂の甘みと赤身の旨みをしっかり感じられます。長年チャーシューを作り続けてきた私たちでも、今回の肉質の違いには正直驚きました。訳あり品ではありますが、味づくりには一切妥協していません。",
     },
     {
       question: "解凍方法のおすすめを教えてください。",
@@ -483,6 +483,31 @@ export default function ChashuLandingPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Fat Content Notice Section */}
+        <section className="py-12 md:py-16 bg-red-50">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <Card className="border-4 border-red-600 bg-white shadow-lg">
+              <CardContent className="p-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-red-600 mb-6 flex items-center gap-3">
+                  <span className="text-3xl">⚠</span>
+                  脂身についてのご案内
+                </h3>
+                <div className="space-y-4 text-gray-800 text-base md:text-lg leading-relaxed">
+                  <p>
+                    本商品はカナダ産チルド豚バラ肉を使用しており、部位によって脂身が多く含まれる場合があります。
+                  </p>
+                  <p>
+                    豚バラならではの脂の甘み、しっとり柔らかな食感、濃厚なコクをお楽しみいただける一方で、脂身が苦手な方には合わない場合がございます。
+                  </p>
+                  <p className="font-semibold">
+                    あらかじめご了承のうえ、ご購入ください。
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
