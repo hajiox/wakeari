@@ -180,7 +180,7 @@ export default function ChashuLandingPage() {
         <section className="relative w-full block md:hidden">
           <div className="relative w-full aspect-[4/5]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%82%B9%E3%83%9E%E3%83%9B%E7%94%A8%E3%83%A1%E3%82%A4%E3%83%B3-exJankYKC9IRM6Vp1xog3aAd2jiExV.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%EF%BC%88%E6%96%87%E5%AD%97%E3%81%AA%E3%81%97%EF%BC%89_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-TFA0OLz6aZFzbJNi850HUJ2iRGTqeq.jpg"
               alt="ラーメン屋が作る本物のチャーシュー"
               fill
               className="object-cover scale-110"
@@ -194,7 +194,7 @@ export default function ChashuLandingPage() {
           <div className="container mx-auto px-4">
             <div className="relative w-full aspect-square max-w-5xl mx-auto">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PC%E7%94%A8%E3%83%A1%E3%82%A4%E3%83%B3-xdVu4ydVY30x6DQB4Se6nCO2H6SiVv.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-HfGGT3ZbuCXPzGrxl7m3RPEy3BxPSW.jpg"
                 alt="ラーメン屋が作る本物のチャーシュー"
                 fill
                 className="object-contain"
@@ -205,7 +205,7 @@ export default function ChashuLandingPage() {
         </section>
 
         {/* Main Copy Section */}
-        <section className="py-8 md:py-10 bg-gray-50">
+        <section className="py-12 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4 text-center max-w-5xl">
             <div className="space-y-4 mb-6">
               <Badge className="bg-red-600 text-white hover:bg-red-700 text-base px-4 py-2">累計10万食突破</Badge>
@@ -215,9 +215,7 @@ export default function ChashuLandingPage() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
-              ラーメン屋が作る本物のチャーシュー（訳あり）を
-              <br />
-              送料無料でご家庭にお届けします。
+              ラーメン屋が作る本物のチャーシュー（訳あり）を送料無料でご家庭にお届けします。
             </h1>
 
             <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 leading-relaxed space-y-4">
