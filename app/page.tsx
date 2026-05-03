@@ -180,7 +180,7 @@ export default function ChashuLandingPage() {
         <section className="relative w-full block md:hidden">
           <div className="relative w-full aspect-[4/5]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%EF%BC%88%E6%96%87%E5%AD%97%E3%81%AA%E3%81%97%EF%BC%89_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-TFA0OLz6aZFzbJNi850HUJ2iRGTqeq.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%82%B9%E3%83%9E%E3%83%9B%E7%94%A8%E3%83%A1%E3%82%A4%E3%83%B3-exJankYKC9IRM6Vp1xog3aAd2jiExV.jpg"
               alt="ラーメン屋が作る本物のチャーシュー"
               fill
               className="object-cover scale-110"
@@ -194,7 +194,7 @@ export default function ChashuLandingPage() {
           <div className="container mx-auto px-4">
             <div className="relative w-full aspect-square max-w-5xl mx-auto">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-HfGGT3ZbuCXPzGrxl7m3RPEy3BxPSW.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PC%E7%94%A8%E3%83%A1%E3%82%A4%E3%83%B3-xdVu4ydVY30x6DQB4Se6nCO2H6SiVv.jpg"
                 alt="ラーメン屋が作る本物のチャーシュー"
                 fill
                 className="object-contain"
