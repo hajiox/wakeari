@@ -64,75 +64,32 @@ export default function ChashuLandingPage() {
         </div>
       </header>
 
-      {/* Main Hero Section with Black Background */}
-      <section className="bg-black relative py-12 md:py-20">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Left Side - Banners */}
-            <div className="space-y-4 md:space-y-6 order-2 md:order-1">
-              {/* Shipping Banner */}
-              <div className="bg-red-600 text-white p-6 md:p-8 rounded-lg shadow-lg">
-                <h2 className="text-3xl md:text-4xl font-bold mb-2">送料無料</h2>
-                <p className="text-sm md:text-base">沖縄・離島地域除く</p>
-              </div>
-
-              {/* Same Day Shipping Banner */}
-              <div className="bg-blue-500 text-white p-6 md:p-8 rounded-lg shadow-lg">
-                <h2 className="text-3xl md:text-4xl font-bold mb-3">
-                  14時までのご注文で<br className="hidden md:block" />
-                  即日発送
-                </h2>
-                <p className="text-xs md:text-sm leading-relaxed">
-                  12月31日-1月2日は発送をお休みさせて頂いております。
-                  急な欠品・SALE等でまれに即日発送できない場合があります。
-                </p>
-              </div>
-
-              {/* Purchase Buttons */}
-              <div className="space-y-3 pt-4">
-                <a
-                  href="https://item.rakuten.co.jp/aizubrandhall/10000013/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={handleMallClick}
-                >
-                  <button className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                    楽天で購入
-                  </button>
-                </a>
-                <a
-                  href="https://store.shopping.yahoo.co.jp/aizubrandhall/b08rxs3zdl.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={handleMallClick}
-                >
-                  <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                    Yahoo!ショッピングで購入
-                  </button>
-                </a>
-                <a
-                  href="https://www.amazon.co.jp/dp/B08RXS3ZDL"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={handleMallClick}
-                >
-                  <button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                    Amazonで購入
-                  </button>
-                </a>
-              </div>
+      {/* Main Hero Section - Full Width Image */}
+      <section className="relative">
+        <div className="container mx-auto px-4 max-w-5xl py-8">
+          {/* PC用メインビジュアル（バナー付き） */}
+          <div className="hidden md:block">
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-HfGGT3ZbuCXPzGrxl7m3RPEy3BxPSW.jpg"
+                alt="訳ありチャーシュー800g - 送料無料・即日発送"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
+          </div>
 
-            {/* Right Side - Product Image */}
-            <div className="order-1 md:order-2">
-              <div className="relative aspect-square md:aspect-auto md:h-96 overflow-hidden rounded-lg shadow-2xl">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%EF%BC%88%E6%96%87%E5%AD%97%E3%81%AA%E3%81%97%EF%BC%89_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-TFA0OLz6aZFzbJNi850HUJ2iRGTqeq.jpg"
-                  alt="訳ありチャーシュー800g"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {/* スマホ用メインビジュアル（バナーなし・大きく表示） */}
+          <div className="block md:hidden">
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%EF%BC%88%E6%96%87%E5%AD%97%E3%81%AA%E3%81%97%EF%BC%89_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89%201-TFA0OLz6aZFzbJNi850HUJ2iRGTqeq.jpg"
+                alt="訳ありチャーシュー800g"
+                fill
+                className="object-cover scale-110"
+                priority
+              />
             </div>
           </div>
         </div>
