@@ -486,6 +486,31 @@ export default function ChashuLandingPage() {
           </div>
         </section>
 
+        {/* Fat Content Notice Section */}
+        <section className="py-12 md:py-16 bg-red-50">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <Card className="border-4 border-red-600 bg-white shadow-lg">
+              <CardContent className="p-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-red-600 mb-6 flex items-center gap-3">
+                  <span className="text-3xl">⚠</span>
+                  脂身についてのご案内
+                </h3>
+                <div className="space-y-4 text-gray-800 text-base md:text-lg leading-relaxed">
+                  <p>
+                    本商品はカナダ産チルド豚バラ肉を使用しており、部位によって脂身が多く含まれる場合があります。
+                  </p>
+                  <p>
+                    豚バラならではの脂の甘み、しっとり柔らかな食感、濃厚なコクをお楽しみいただける一方で、脂身が苦手な方には合わない場合がございます。
+                  </p>
+                  <p className="font-semibold">
+                    あらかじめご了承のうえ、ご購入ください。
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Shipping Info Section */}
         <section className="py-12 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4 max-w-6xl">
