@@ -14,15 +14,15 @@ export default function ChashuLandingPage() {
     trackViewContent()
   }, [])
 
-  const handleMallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
+  const handleMallClick = (mall: string) => {
     trackMallClick()
-    
-    // Wait 300-500ms before navigating
-    const href = (e.currentTarget as HTMLAnchorElement).href
-    setTimeout(() => {
-      window.location.href = href
-    }, 350)
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'click_purchase', {
+        event_category: 'ecommerce',
+        event_label: mall,
+        currency: 'JPY'
+      })
+    }
   }
 
   const scrollToSection = (sectionId: string) => {
@@ -579,7 +579,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={handleMallClick}
+                    onClick={() => handleMallClick('yahoo')}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -609,7 +609,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={handleMallClick}
+                    onClick={() => handleMallClick('rakuten')}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -639,7 +639,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={handleMallClick}
+                    onClick={() => handleMallClick('amazon')}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
