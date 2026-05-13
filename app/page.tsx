@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star } from "lucide-react"
 import Script from "next/script"
-import { track, trackMallClick, trackViewContent } from "@/lib/metaPixel"
+import { trackMallClick, trackViewContent } from "@/lib/metaPixel"
 import { useEffect } from "react"
 
 export default function ChashuLandingPage() {
@@ -14,15 +14,8 @@ export default function ChashuLandingPage() {
     trackViewContent()
   }, [])
 
-  const handleMallClick = (mall: string) => {
+  const handleMallClick = () => {
     trackMallClick()
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'click_purchase', {
-        event_category: 'ecommerce',
-        event_label: mall,
-        currency: 'JPY'
-      })
-    }
   }
 
   const scrollToSection = (sectionId: string) => {
@@ -579,7 +572,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={() => handleMallClick('yahoo')}
+                    onClick={handleMallClick}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -609,7 +602,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={() => handleMallClick('rakuten')}
+                    onClick={handleMallClick}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
@@ -639,7 +632,7 @@ export default function ChashuLandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
-                    onClick={() => handleMallClick('amazon')}
+                    onClick={handleMallClick}
                   >
                     <div className="bg-white p-3 md:p-4 rounded-lg mb-3 md:mb-4 mx-auto max-w-xs hover:shadow-md transition-shadow">
                       <Image
