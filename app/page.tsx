@@ -549,7 +549,7 @@ export default function ChashuLandingPage() {
             {/* Price Display */}
             <div className="text-center mt-8">
               <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-                4,290<span className="text-3xl md:text-4xl">円</span>
+                4,490<span className="text-3xl md:text-4xl">円</span>
               </p>
               <p className="text-lg md:text-xl text-gray-600">（税・送料込）</p>
             </div>
