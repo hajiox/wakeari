@@ -46,9 +46,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/ogp.jpg",
-        width: 1200,
-        height: 630,
+        width: 1217,
+        height: 647,
         alt: "ラーメン屋が作る本物のチャーシュー",
+        type: "image/jpeg",
       },
     ],
     locale: "ja_JP",
@@ -56,10 +57,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@Aizu_Brand_Kan",
+    creator: "@Aizu_Brand_Kan",
     title: "【訳あり800g】ラーメン屋が作る本物のチャーシュー｜送料無料",
     description: "楽天・Yahoo焼豚部門1位！累計10万食突破。個包装＋特製タレ付き。即日発送でお届けします。",
-    images: ["/images/ogp.jpg"],
-    creator: "@aizubrandhall",
+    images: [
+      {
+        url: "/images/ogp.jpg",
+        alt: "ラーメン屋が作る本物のチャーシュー",
+        width: 1217,
+        height: 647,
+      },
+    ],
   },
   robots: {
     index: true,
